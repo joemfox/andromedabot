@@ -33,6 +33,6 @@ thumbfile = open("thumb.jpg","rb")
 print image
 
 # status = twitter.Status(status="test", media=thumbfile)
-status = "Coordinates: " + str(box[0]+((number%14)*5000)) + "," + str(box[1]+((number/14)*5000))+". " + str(w) + "x" + str(w) + "px"
+status = "Coordinates: " + str(box[0]+(((number-1)%14)*5000)) + "," + str(box[1]+((number/14)*5000))+". " + str(w) + "x" + str(w) + "px"
 print status
 api.PostMedia(status,thumbfile)
