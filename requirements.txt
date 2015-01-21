@@ -1,5 +1,4 @@
 Pillow==2.7.0
-axel==0.0.4
 oauthlib==0.7.2
 python-twitter==2.2
 requests==2.5.1
